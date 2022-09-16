@@ -56,13 +56,11 @@ static char	*ft_putnbr(long n, char *m)
 char	*ft_itoa(int n)
 {
 	char			*array;
-	int				counter;
 	long			numb;
 
 	numb = (long) n;
 	array = (char *)malloc((ft_len(n) + 2) * sizeof(char));
 	if (array == 0)
 		return (NULL);
-	counter = 0;
 	return (ft_putnbr(numb, array));
 }
